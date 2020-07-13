@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Apdh_Core>
+            <version>0.0.1</version>
+        </Apdh_Core>
+    </modules>
+    <adminhtml>
+        <menu>
+            <apdh module="apdh">
+                <title>Apdh</title>
+                <sort_order>71</sort_order>
+                <children>
+                    <apdh_config module="apdh" translate="label">
+                        <title>Configurations (Core)</title>
+                        <sort_order>0</sort_order>
+                        <action>adminhtml/system_config/edit/section/apdh_options</action>
+                    </apdh_config>
+                </children>
+            </apdh>
+        </menu>
+        <acl>
+            <resources>
+                <all>
+                    <title>Configuration Apdh Module</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <apdh_options translate="label">
+                                            <title>Configutation Apdh Core</title>
+                                        </apdh_options>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <translate>
+            <modules>
+                <Apdh_Core>
+                    <files>
+                        <default>Apdh_Core.csv</default>
+                    </files>
+                </Apdh_Core>
+            </modules>
+        </translate>
+    </adminhtml>
+    <global>
+        <helpers>
+            <apdh>
+                <class>Apdh_Core_Helper</class>
+            </apdh>
+        </helpers>
+        <blocks>
+            <apdh>
+                <class>Apdh_Core_Block</class>
+            </apdh>
+        </blocks>
+        <models>
+            <apdh>
+                <class>Apdh_Core_Model</class>
+            </apdh>
+        </models>
+    </global>
+</config>

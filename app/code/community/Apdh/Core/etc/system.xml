@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <apdh translate="label" module="apdh">
+            <label>Apdh</label>
+            <sort_order>1</sort_order>
+        </apdh>
+    </tabs>
+
+    <sections>
+        <apdh_options translate="label" module="apdh">
+            <label>Core</label>
+            <tab>apdh</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <about translate="label">
+                    <label>Apdh.es</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <info translate="label">
+                            <frontend_model>apdh/adminhtml_system_config_info</frontend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </info>
+                    </fields>
+                </about>
+                <data translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <email>
+                            <label>Email</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>apdh/backend_user</backend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Specific email</comment>
+                        </email>
+                        <key>
+                            <label>Key</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>apdh/adminhtml_renderer_key</frontend_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Save and return your password</comment>
+                        </key>
+                    </fields>
+                </data>
+            </groups>
+        </apdh_options>
+    </sections>
+</config>

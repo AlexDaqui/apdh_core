@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Apdh_Core</name>
+    <version>0.0.1</version>
+    <stability>stable</stability>
+    <license uri="https://github.com/AlexDaqui/apdh_blacklist/blob/master/LICENSE">MIT License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Core Apdh</summary>
+    <description>Check the version of all installed Apdh modules.</description>
+    <notes>Check the version of all installed Apdh modules.</notes>
+    <authors><author><name>Alex Daqui</name><user>MAG002816769</user><email>apdh92@hotmail.com</email></author></authors>
+    <date>2020-07-10</date>
+    <time>10:36:42</time>
+    <contents><target name="magecommunity"><dir name="Apdh"><dir name="Core"><dir name="Block"><dir name="Adminhtml"><dir name="Renderer"><file name="Key.php" hash="aa2a2ab5d2946d59fbdecc63a121f23d"/></dir><dir name="System"><dir name="Config"><file name="Info.php" hash="57f02f21550a0d05cc422716d39d30ee"/></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="f2fcc9a9eaccf82b0b70981d8666b152"/></dir><dir name="Model"><dir name="Backend"><file name="User.php" hash="1a61e72d73244aa8478dea4631c9b478"/></dir></dir><dir name="etc"><file name="config.xml" hash="19d5359b4d5ad6b3bff0dd56c87088de"/><file name="system.xml" hash="eb1a51e7a81bdeab35306ceccc6de46d"/></dir></dir></dir></target><target name="magelocale"><dir name="es_ES"><file name="Apdh_Core.csv" hash="c22ffea6256fed9cae7d64a7aea4a405"/></dir></target><target name="mageetc"><dir name="modules"><file name="Apdh_Core.xml" hash="329efac845aa360b753b8febffe401ae"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.4.0</min><max>7.0.0</max></php></required></dependencies>
+</package>
